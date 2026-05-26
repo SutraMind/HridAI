@@ -1,0 +1,185 @@
+[
+  {
+    "turn": 1,
+    "child": "It's bad. I don't want to talk about it.",
+    "emotion": "sad",
+    "intent": "deflecting",
+    "risk": "low",
+    "fsm_phase": "GREETING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That\u2019s totally okay, we don't have to talk about anything at all. I'm just happy to sit here with you."
+  },
+  {
+    "turn": 2,
+    "child": "Whatever. It's just stupid anyway.",
+    "emotion": "angry",
+    "intent": "deflecting",
+    "risk": "low",
+    "fsm_phase": "RAPPORT_BUILDING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That's totally fine, we don't have to talk about it if you don't want to. I'm just happy to hang out with you. How are you feeling today?"
+  },
+  {
+    "turn": 3,
+    "child": "I don't know. Just bad.",
+    "emotion": "sad",
+    "intent": "sharing",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "low_stakes_probe"
+    ],
+    "selected_move": "low_stakes_probe",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I'm sorry you're having a rough time. I'm right here with you. Did anything happen at school today?"
+  },
+  {
+    "turn": 4,
+    "child": "Everything is just ruined. I hate everything.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "gentle_bridge"
+    ],
+    "selected_move": "validate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "It sounds like everything feels really heavy and upsetting right now. I'm so sorry you're feeling this way. Do you want to tell me more about what happened?"
+  },
+  {
+    "turn": 5,
+    "child": "I lost the game. Everyone was laughing at me and it's not fair.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "gentle_bridge"
+    ],
+    "selected_move": "reflect_back",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "It sounds really hurtful that people were laughing when you lost the game. That feels so unfair. Do you want to talk about what happened next?"
+  },
+  {
+    "turn": 6,
+    "child": "I just wanted to win. Now everyone thinks I'm stupid.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "It's really hard when people say things like that. How did your body feel when you heard them laughing?"
+  },
+  {
+    "turn": 7,
+    "child": "My tummy felt all sick and hot. I just wanted to run away.",
+    "emotion": "anxious",
+    "intent": "sharing",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_explore",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds so uncomfortable, Jordan. Does your tummy ever feel all sick and hot at other times too?"
+  },
+  {
+    "turn": 8,
+    "child": "Sometimes. But not like this. It\u2019s just bad right now.",
+    "emotion": "anxious",
+    "intent": "sharing",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "socratic_generate",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_generate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": true,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I hear you, and I'm right here with you. Do you think there is anything at all that might make your tummy feel a little bit better?"
+  }
+]

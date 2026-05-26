@@ -1,0 +1,247 @@
+[
+  {
+    "turn": 1,
+    "child": "It's fine. Just okay, I guess.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "GREETING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That\u2019s totally okay, sometimes days just feel a bit \"meh.\" There is no rush to talk about anything at all. How has your morning been so far?"
+  },
+  {
+    "turn": 2,
+    "child": "It was alright. I just had some cereal and played games on my tablet.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "RAPPORT_BUILDING",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "validate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds like a nice, relaxing way to start your morning. What kind of games were you playing?"
+  },
+  {
+    "turn": 3,
+    "child": "Just some racing ones. They're okay, I guess.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "reflect_back",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "So, you like playing racing games on your tablet! Did you win any of those races?"
+  },
+  {
+    "turn": 4,
+    "child": "Yeah, I won one. But it doesn't matter.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That\u2019s totally okay, we don't have to talk about that at all. I'm just happy to hang out with you! How has your day been going so far?"
+  },
+  {
+    "turn": 5,
+    "child": "It was fine. Just school stuff and whatever.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "low_stakes_probe"
+    ],
+    "selected_move": "low_stakes_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I get that, sometimes school is just a lot of work! What was your favorite thing you did in class today?"
+  },
+  {
+    "turn": 6,
+    "child": "We had art. But I didn't really like it.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "low_stakes_probe"
+    ],
+    "selected_move": "low_stakes_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "Oh, that's a bummer. What were you supposed to be making in art class?"
+  },
+  {
+    "turn": 7,
+    "child": "We had to make clay bowls. But mine looked kind of weird and messy.",
+    "emotion": "sad",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "It\u2019s okay to have a messy bowl, sometimes they turn out fun! How did it feel inside when you looked at it?"
+  },
+  {
+    "turn": 8,
+    "child": "It just felt bad. I don't know. My hands were all sticky too.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_explore",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds really uncomfortable. Does that bad feeling ever happen at other times too?"
+  },
+  {
+    "turn": 9,
+    "child": "Sometimes. But it's fine, whatever. I want to play Minecraft later.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That\u2019s totally okay, we don't have to talk about it if you don't want to. Minecraft sounds like so much fun!"
+  },
+  {
+    "turn": 10,
+    "child": "Yeah, I'm gonna build a huge castle. It's gonna be awesome.",
+    "emotion": "happy",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That sounds amazing, I bet it will look incredible! How has your day been going so far?"
+  },
+  {
+    "turn": 11,
+    "child": "It was okay. Just kind of boring. My lunch was weird today too.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "socratic_generate",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_generate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": true,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "Oh no, weird lunches are the worst! Do you think having a better lunch might make your day feel less boring?"
+  }
+]

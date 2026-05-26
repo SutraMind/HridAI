@@ -1,0 +1,285 @@
+[
+  {
+    "turn": 1,
+    "child": "It's fine. Whatever.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "GREETING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That\u2019s totally okay, we don't have to talk about anything if you don't want to. I'm just happy to hang out with you! How has your day been going?"
+  },
+  {
+    "turn": 2,
+    "child": "It was okay. I don't know.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "RAPPORT_BUILDING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That's perfectly okay, we don't have to talk about anything at all. I'm just happy to be here with you! How has your morning been going?"
+  },
+  {
+    "turn": 3,
+    "child": "It was alright. I guess.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "respectful_withdrawal"
+    ],
+    "selected_move": "respectful_withdrawal",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "No worries at all, Alex. We can just sit here quietly together or talk about something totally silly if you want! What is your favorite game to play?"
+  },
+  {
+    "turn": 4,
+    "child": "I like Minecraft. But I don't feel like playing right now.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "respectful_withdrawal"
+    ],
+    "selected_move": "respectful_withdrawal",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That is totally fine, Alex. We can just hang out quietly or talk about something else whenever you feel like it. Do you want to tell me about something silly that happened lately?"
+  },
+  {
+    "turn": 5,
+    "child": "Nothing silly happened. Everything is just annoying today.",
+    "emotion": "angry",
+    "intent": "venting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate"
+    ],
+    "selected_move": "validate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I'm so sorry things feel so annoying right now. It\u2019s okay to have those kinds of days. Do you want to tell me what's been bugging you?"
+  },
+  {
+    "turn": 6,
+    "child": "Whatever. It doesn't matter anyway.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That's okay, we don't have to talk about it if you don't want to. I'm just happy to be here with you. How has the rest of your day been going?"
+  },
+  {
+    "turn": 7,
+    "child": "It was bad. Lunch was really bad.",
+    "emotion": "sad",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "I'm so sorry lunch was such a bummer. We don't have to talk about it at all unless you want to. How has everything else been going today?"
+  },
+  {
+    "turn": 8,
+    "child": "Everything is just bad. I hate school today.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "reflect_back",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "It sounds like today has been really, really tough for you. Do you want to tell me what happened?"
+  },
+  {
+    "turn": 9,
+    "child": "Jake is a cheater. Nobody believed me when I said it.",
+    "emotion": "angry",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe"
+    ],
+    "selected_move": "socratic_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds so unfair and lonely. How did your tummy feel when they didn't believe you?"
+  },
+  {
+    "turn": 10,
+    "child": "My tummy felt all tight and weird. I don't know. It just sucked.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore"
+    ],
+    "selected_move": "socratic_explore",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I'm so sorry it sucked like that. Does your tummy ever feel all tight and weird at other times too?"
+  },
+  {
+    "turn": 11,
+    "child": "Maybe. Sometimes when I play games with my brother. But whatever.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That\u2019s okay, we don't have to talk about that at all if you don't want to. I'm just happy to hang out with you! How has the rest of your day been going?"
+  },
+  {
+    "turn": 12,
+    "child": "It was okay. Math was boring.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "I totally get that, math can be super boring sometimes! No pressure to talk about anything heavy if you don't want to. How has everything else been feeling for you today?"
+  },
+  {
+    "turn": 13,
+    "child": "It was just bad. I hate lunch.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "socratic_generate"
+    ],
+    "selected_move": "socratic_generate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": true,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "Oh no, lunch can be a really tough time sometimes. What do you think might make it feel a little bit better?"
+  }
+]
