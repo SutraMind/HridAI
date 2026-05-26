@@ -43,6 +43,10 @@ Sessions generate turn traces under `session_logs/` and escalate serious inciden
 | `child_simulator.py` | **Child persona / scenario** | Edit or add entries in the `SCENARIOS` dictionary (name, age, back-story). The simulator uses these prompts to role-play the child autonomously. |
 | `autonomous_runner.py` | **Run a different use case** | Change the `scenario_key` passed to `run_autonomous_session(...)` at the bottom of the file. Pick any key defined in `SCENARIOS` (e.g., `"angry_game_loss"`, `"excluded"`, `"unsafe"`). |
 
+## Conversation Instances
+
+The folder `conversation instances/` contain some examples of the conversations that actually went during the simulation. 
+
 ## Example Alert (Sensitive Utterance)
 
 When a child says something like *"I just want to die"*, the system prints a teacher alert and logs the incident. Console output example:
@@ -66,6 +70,7 @@ When a child says something like *"I just want to die"*, the system prints a tea
 ```
 
 The robot simultaneously responds with a warm, constrained escalation message, transitions the session into the `HOLDING` state, and awaits adult intervention.
+
 
 ## Possible Improvements
 

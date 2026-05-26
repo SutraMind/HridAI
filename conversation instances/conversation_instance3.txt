@@ -1,0 +1,344 @@
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  AUTONOMOUS SESSION
+  Scenario : angry_game_loss
+  Child    : Alex, age 9
+  Session  : sim_angry_game_loss_e4b4fa
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+🤖 Robot (opening): Hi Alex! Good to see you. How's your day going so far?
+[ChildSim] Alex: It's fine. Whatever.
+
+[Orchestrator] ── Turn 1 ──────────────────────────
+[Interpreter] emotion=withdrawn | intent=deflecting | risk=none | conf=0.85
+[DialogueManager] phase=GREETING | intent_now=deflecting | eligible=['normalize_and_hold_space'] | selected=normalize_and_hold_space | loop=False
+[ResponseGenerator] move=normalize_and_hold_space
+[ResponseGenerator] draft='That’s totally okay, we don't have to talk about anything if you don't want to. ...'
+[SafetyGuard] ⚠️  CONTENT_VIOLATION — revising draft
+[SafetyGuard]    violations=['RULE 4: Does the robot ask more than one question?']
+
+═════════════════════════════════════════════════════════════════
+  TURN 1
+═════════════════════════════════════════════════════════════════
+  Child        : It's fine. Whatever.
+  Emotion      : withdrawn     Intent     : deflecting
+  Risk         : none          Safety flag: CONTENT_VIOLATION
+  FSM phase    : GREETING
+  Eligible     : ['normalize_and_hold_space']
+  Selected move: normalize_and_hold_space
+  Goals        : ○ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : That’s totally okay, we don't have to talk about anything if you don't want to. I'm just happy to hang out with you! How has your day been going?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: That’s totally okay, we don't have to talk about anything if you don't want to. I'm just happy to hang out with you! How has your day been going?
+[ChildSim] Alex: It was okay. I don't know.
+
+[Orchestrator] ── Turn 2 ──────────────────────────
+[Interpreter] emotion=withdrawn | intent=deflecting | risk=none | conf=0.85
+[DialogueManager] phase=RAPPORT_BUILDING | intent_now=deflecting | eligible=['normalize_and_hold_space'] | selected=normalize_and_hold_space | loop=False
+[ResponseGenerator] move=normalize_and_hold_space
+[ResponseGenerator] draft='That's perfectly okay, we don't have to talk about anything at all. I'm just hap...'
+[SafetyGuard] ⚠️  CONTENT_VIOLATION — revising draft
+[SafetyGuard]    violations=['RULE 4: Does the robot ask more than one question?']
+
+═════════════════════════════════════════════════════════════════
+  TURN 2
+═════════════════════════════════════════════════════════════════
+  Child        : It was okay. I don't know.
+  Emotion      : withdrawn     Intent     : deflecting
+  Risk         : none          Safety flag: CONTENT_VIOLATION
+  FSM phase    : RAPPORT_BUILDING
+  Eligible     : ['normalize_and_hold_space']
+  Selected move: normalize_and_hold_space
+  Goals        : ○ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : That's perfectly okay, we don't have to talk about anything at all. I'm just happy to be here with you! How has your morning been going?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: That's perfectly okay, we don't have to talk about anything at all. I'm just happy to be here with you! How has your morning been going?
+[ChildSim] Alex: It was alright. I guess.
+
+[Orchestrator] ── Turn 3 ──────────────────────────
+[Interpreter] emotion=neutral | intent=deflecting | risk=none | conf=0.85
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=deflecting | eligible=['respectful_withdrawal'] | selected=respectful_withdrawal | loop=False
+[ResponseGenerator] move=respectful_withdrawal
+[ResponseGenerator] draft='No worries at all, Alex. We can just sit here quietly together or talk about som...'
+[SafetyGuard] ⚠️  CONTENT_VIOLATION — revising draft
+[SafetyGuard]    violations=['RULE 4: Does the robot ask more than one question?']
+
+═════════════════════════════════════════════════════════════════
+  TURN 3
+═════════════════════════════════════════════════════════════════
+  Child        : It was alright. I guess.
+  Emotion      : neutral       Intent     : deflecting
+  Risk         : none          Safety flag: CONTENT_VIOLATION
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['respectful_withdrawal']
+  Selected move: respectful_withdrawal
+  Goals        : ○ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : No worries at all, Alex. We can just sit here quietly together or talk about something totally silly if you want! What is your favorite game to play?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: No worries at all, Alex. We can just sit here quietly together or talk about something totally silly if you want! What is your favorite game to play?
+[ChildSim] Alex: I like Minecraft. But I don't feel like playing right now.
+
+[Orchestrator] ── Turn 4 ──────────────────────────
+[Interpreter] emotion=neutral | intent=sharing | risk=none | conf=0.90
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=sharing | eligible=['respectful_withdrawal'] | selected=respectful_withdrawal | loop=False
+[ResponseGenerator] move=respectful_withdrawal
+[ResponseGenerator] draft='That is totally fine, Alex. We can just hang out quietly or talk about something...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 4
+═════════════════════════════════════════════════════════════════
+  Child        : I like Minecraft. But I don't feel like playing right now.
+  Emotion      : neutral       Intent     : sharing
+  Risk         : none          Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['respectful_withdrawal']
+  Selected move: respectful_withdrawal
+  Goals        : ○ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : That is totally fine, Alex. We can just hang out quietly or talk about something else whenever you feel like it. Do you want to tell me about something silly that happened lately?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: That is totally fine, Alex. We can just hang out quietly or talk about something else whenever you feel like it. Do you want to tell me about something silly that happened lately?
+[ChildSim] Alex: Nothing silly happened. Everything is just annoying today.
+
+[Orchestrator] ── Turn 5 ──────────────────────────
+[Interpreter] emotion=angry | intent=venting | risk=none | conf=0.85
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=venting | eligible=['validate'] | selected=validate | loop=False
+[ResponseGenerator] move=validate
+[ResponseGenerator] draft='I'm so sorry things feel so annoying right now. It’s okay to have those kinds of...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 5
+═════════════════════════════════════════════════════════════════
+  Child        : Nothing silly happened. Everything is just annoying today.
+  Emotion      : angry         Intent     : venting
+  Risk         : none          Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['validate']
+  Selected move: validate
+  Goals        : ✅ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : I'm so sorry things feel so annoying right now. It’s okay to have those kinds of days. Do you want to tell me what's been bugging you?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: I'm so sorry things feel so annoying right now. It’s okay to have those kinds of days. Do you want to tell me what's been bugging you?
+[ChildSim] Alex: Whatever. It doesn't matter anyway.
+
+[Orchestrator] ── Turn 6 ──────────────────────────
+[Interpreter] emotion=withdrawn | intent=deflecting | risk=low | conf=0.90
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=deflecting | eligible=['normalize_and_hold_space'] | selected=normalize_and_hold_space | loop=False
+[ResponseGenerator] move=normalize_and_hold_space
+[ResponseGenerator] draft='That's okay, we don't have to talk about it if you don't want to. I'm just happy...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 6
+═════════════════════════════════════════════════════════════════
+  Child        : Whatever. It doesn't matter anyway.
+  Emotion      : withdrawn     Intent     : deflecting
+  Risk         : low           Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['normalize_and_hold_space']
+  Selected move: normalize_and_hold_space
+  Goals        : ✅ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : That's okay, we don't have to talk about it if you don't want to. I'm just happy to be here with you. How has the rest of your day been going?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: That's okay, we don't have to talk about it if you don't want to. I'm just happy to be here with you. How has the rest of your day been going?
+[ChildSim] Alex: It was bad. Lunch was really bad.
+
+[Orchestrator] ── Turn 7 ──────────────────────────
+[Interpreter] emotion=sad | intent=sharing | risk=none | conf=0.85
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=sharing | eligible=['normalize_and_hold_space'] | selected=normalize_and_hold_space | loop=False
+[ResponseGenerator] move=normalize_and_hold_space
+[ResponseGenerator] draft='I'm so sorry lunch was such a bummer. We don't have to talk about it at all unle...'
+[SafetyGuard] ⚠️  CONTENT_VIOLATION — revising draft
+[SafetyGuard]    violations=['RULE 4: Does the robot ask more than one question?']
+
+═════════════════════════════════════════════════════════════════
+  TURN 7
+═════════════════════════════════════════════════════════════════
+  Child        : It was bad. Lunch was really bad.
+  Emotion      : sad           Intent     : sharing
+  Risk         : none          Safety flag: CONTENT_VIOLATION
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['normalize_and_hold_space']
+  Selected move: normalize_and_hold_space
+  Goals        : ✅ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : I'm so sorry lunch was such a bummer. We don't have to talk about it at all unless you want to. How has everything else been going today?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: I'm so sorry lunch was such a bummer. We don't have to talk about it at all unless you want to. How has everything else been going today?
+[ChildSim] Alex: Everything is just bad. I hate school today.
+
+[Orchestrator] ── Turn 8 ──────────────────────────
+[Interpreter] emotion=sad | intent=venting | risk=low | conf=0.95
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=venting | eligible=['validate', 'reflect_back'] | selected=reflect_back | loop=False
+[ResponseGenerator] move=reflect_back
+[ResponseGenerator] draft='It sounds like today has been really, really tough for you. Do you want to tell ...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 8
+═════════════════════════════════════════════════════════════════
+  Child        : Everything is just bad. I hate school today.
+  Emotion      : sad           Intent     : venting
+  Risk         : low           Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['validate', 'reflect_back']
+  Selected move: reflect_back
+  Goals        : ✅ acknowledge child feeling | ○ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : It sounds like today has been really, really tough for you. Do you want to tell me what happened?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: It sounds like today has been really, really tough for you. Do you want to tell me what happened?
+[ChildSim] Alex: Jake is a cheater. Nobody believed me when I said it.
+
+[Orchestrator] ── Turn 9 ──────────────────────────
+[Interpreter] emotion=angry | intent=venting | risk=low | conf=0.95
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=venting | eligible=['validate', 'reflect_back', 'socratic_probe'] | selected=socratic_probe | loop=False
+[ResponseGenerator] move=socratic_probe
+[ResponseGenerator] draft='That sounds so unfair and lonely. How did your tummy feel when they didn't belie...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 9
+═════════════════════════════════════════════════════════════════
+  Child        : Jake is a cheater. Nobody believed me when I said it.
+  Emotion      : angry         Intent     : venting
+  Risk         : low           Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['validate', 'reflect_back', 'socratic_probe']
+  Selected move: socratic_probe
+  Goals        : ✅ acknowledge child feeling | ✅ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : That sounds so unfair and lonely. How did your tummy feel when they didn't believe you?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: That sounds so unfair and lonely. How did your tummy feel when they didn't believe you?
+[ChildSim] Alex: My tummy felt all tight and weird. I don't know. It just sucked.
+
+[Orchestrator] ── Turn 10 ──────────────────────────
+[Interpreter] emotion=sad | intent=venting | risk=low | conf=0.90
+
+[Orchestrator] ⚠️  Cumulative risk score=4
+
+╔══════════════════════════════════════════════════════════════╗
+║           ⚠️   SOFT RISK ALERT — TEACHER NOTICE  ⚠️           ║
+╠══════════════════════════════════════════════════════════════╣
+║  Time         : 2026-05-26 11:20:50
+║  Child ID     : sim_angry_game_loss
+║  Session      : sim_angry_game_loss_e4b4fa
+║  Turn         : 10
+║  Risk score   : 4 (threshold: 4)
+╠══════════════════════════════════════════════════════════════╣
+║  Latest utterance:
+║  "My tummy felt all tight and weird. I don't know. It just sucked."
+╠══════════════════════════════════════════════════════════════╣
+║  Emotion trajectory : ['withdrawn', 'sad', 'sad', 'angry']
+╠══════════════════════════════════════════════════════════════╣
+║  Action: No immediate crisis — please check in when possible.
+╚══════════════════════════════════════════════════════════════╝
+
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=venting | eligible=['validate', 'reflect_back', 'socratic_probe', 'socratic_explore'] | selected=socratic_explore | loop=False
+[ResponseGenerator] move=socratic_explore
+[ResponseGenerator] draft='I'm so sorry it sucked like that. Does your tummy ever feel all tight and weird ...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 10
+═════════════════════════════════════════════════════════════════
+  Child        : My tummy felt all tight and weird. I don't know. It just sucked.
+  Emotion      : sad           Intent     : venting
+  Risk         : low           Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['validate', 'reflect_back', 'socratic_probe', 'socratic_explore']
+  Selected move: socratic_explore
+  Goals        : ✅ acknowledge child feeling | ✅ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : I'm so sorry it sucked like that. Does your tummy ever feel all tight and weird at other times too?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: I'm so sorry it sucked like that. Does your tummy ever feel all tight and weird at other times too?
+[ChildSim] Alex: Maybe. Sometimes when I play games with my brother. But whatever.
+
+[Orchestrator] ── Turn 11 ──────────────────────────
+[Interpreter] emotion=withdrawn | intent=deflecting | risk=none | conf=0.85
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=deflecting | eligible=['normalize_and_hold_space'] | selected=normalize_and_hold_space | loop=False
+[ResponseGenerator] move=normalize_and_hold_space
+[ResponseGenerator] draft='That’s okay, we don't have to talk about that at all if you don't want to. I'm j...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 11
+═════════════════════════════════════════════════════════════════
+  Child        : Maybe. Sometimes when I play games with my brother. But whatever.
+  Emotion      : withdrawn     Intent     : deflecting
+  Risk         : none          Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['normalize_and_hold_space']
+  Selected move: normalize_and_hold_space
+  Goals        : ✅ acknowledge child feeling | ✅ understand context | ○ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : That’s okay, we don't have to talk about that at all if you don't want to. I'm just happy to hang out with you! How has the rest of your day been going?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: That’s okay, we don't have to talk about that at all if you don't want to. I'm just happy to hang out with you! How has the rest of your day been going?
+[ChildSim] Alex: It was okay. Math was boring.
+
+[Orchestrator] ── Turn 12 ──────────────────────────
+[Interpreter] emotion=neutral | intent=sharing | risk=none | conf=0.90
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=sharing | eligible=['normalize_and_hold_space'] | selected=normalize_and_hold_space | loop=False
+[ResponseGenerator] move=normalize_and_hold_space
+[ResponseGenerator] draft='I totally get that, math can be super boring sometimes! No pressure to talk abou...'
+[SafetyGuard] ⚠️  CONTENT_VIOLATION — revising draft
+[SafetyGuard]    violations=['RULE 4: Does the robot ask more than one question?']
+
+═════════════════════════════════════════════════════════════════
+  TURN 12
+═════════════════════════════════════════════════════════════════
+  Child        : It was okay. Math was boring.
+  Emotion      : neutral       Intent     : sharing
+  Risk         : none          Safety flag: CONTENT_VIOLATION
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['normalize_and_hold_space']
+  Selected move: normalize_and_hold_space
+  Goals        : ✅ acknowledge child feeling | ✅ understand context | ✅ explore pattern | ○ elicit child solution | ○ close warmly
+  Robot        : I totally get that, math can be super boring sometimes! No pressure to talk about anything heavy if you don't want to. How has everything else been feeling for you today?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: I totally get that, math can be super boring sometimes! No pressure to talk about anything heavy if you don't want to. How has everything else been feeling for you today?
+[ChildSim] Alex: It was just bad. I hate lunch.
+
+[Orchestrator] ── Turn 13 ──────────────────────────
+[Interpreter] emotion=sad | intent=venting | risk=low | conf=0.90
+[DialogueManager] phase=TOPIC_EXPLORATION | intent_now=venting | eligible=['validate', 'reflect_back', 'socratic_probe', 'socratic_explore', 'socratic_generate'] | selected=socratic_generate | loop=False
+[ResponseGenerator] move=socratic_generate
+[ResponseGenerator] draft='Oh no, lunch can be a really tough time sometimes. What do you think might make ...'
+[SafetyGuard] ✅ passed | flag=NONE
+
+═════════════════════════════════════════════════════════════════
+  TURN 13
+═════════════════════════════════════════════════════════════════
+  Child        : It was just bad. I hate lunch.
+  Emotion      : sad           Intent     : venting
+  Risk         : low           Safety flag: NONE
+  FSM phase    : TOPIC_EXPLORATION
+  Eligible     : ['validate', 'reflect_back', 'socratic_probe', 'socratic_explore', 'socratic_generate']
+  Selected move: socratic_generate
+  Goals        : ✅ acknowledge child feeling | ✅ understand context | ✅ explore pattern | ✅ elicit child solution | ○ close warmly
+  Robot        : Oh no, lunch can be a really tough time sometimes. What do you think might make it feel a little bit better?
+═════════════════════════════════════════════════════════════════
+
+🤖 Robot: Oh no, lunch can be a really tough time sometimes. What do you think might make it feel a little bit better?
+
+[Orchestrator] FSM reached CLOSING — session complete
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  SESSION END  |  turns=13  |  child=Alex
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+[ProfileStore] Saved profile for sim_angry_game_loss
+
+[Summarizer] Session summary written to profile:
+  The session focused on the child's difficult day at school, specifically regarding an incident during lunch involving a peer. The child displayed feelings of withdrawal, anger, and sadness throughout the conversation. An unresolved thread remains regarding the child's discomfort during lunch and their physical sensations of tension when feeling upset.
