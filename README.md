@@ -1,4 +1,4 @@
-# Child Therapeutic Robot Framework
+# HridAI - An AI with Heart
 
 A safety-first conversational AI framework designed for emotionally supportive dialogue with children aged 7–12. It layers deterministic safeguards, structured dialogue management, and LLM-based response generation to balance empathy with robust child safeguarding.
 
@@ -34,6 +34,14 @@ A safety-first conversational AI framework designed for emotionally supportive d
   ```
 
 Sessions generate turn traces under `session_logs/` and escalate serious incidents to `flagged_incidents.json`.
+
+## Key Files to Tweak
+
+| File | What to change | How |
+|------|----------------|-----|
+| `llm_client.py` | **LLM backend** | Update `LM_STUDIO_BASE_URL` (e.g., `http://127.0.0.1:1234/v1`) and `MODEL_NAME` to match your local or remote model endpoint. |
+| `child_simulator.py` | **Child persona / scenario** | Edit or add entries in the `SCENARIOS` dictionary (name, age, back-story). The simulator uses these prompts to role-play the child autonomously. |
+| `autonomous_runner.py` | **Run a different use case** | Change the `scenario_key` passed to `run_autonomous_session(...)` at the bottom of the file. Pick any key defined in `SCENARIOS` (e.g., `"angry_game_loss"`, `"excluded"`, `"unsafe"`). |
 
 ## Example Alert (Sensitive Utterance)
 
