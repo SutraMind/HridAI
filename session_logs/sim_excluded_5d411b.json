@@ -1,0 +1,290 @@
+[
+  {
+    "turn": 1,
+    "child": "It's okay. Just fine, I guess.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "GREETING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That\u2019s totally okay, we don't have to talk about anything at all if you don't want to. I'm just happy to hang out with you!"
+  },
+  {
+    "turn": 2,
+    "child": "Yeah. Do you like Minecraft?",
+    "emotion": "neutral",
+    "intent": "topic_change",
+    "risk": "none",
+    "fsm_phase": "RAPPORT_BUILDING",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "validate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "Oh, I love Minecraft! It is so much fun to build amazing things. What is your favorite thing to make in the game?"
+  },
+  {
+    "turn": 3,
+    "child": "I like building big castles. But whatever, it doesn't matter.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "It matters to me because I love hearing about your cool builds! But it's totally okay if you don't want to talk about it right now. How are you doing today?"
+  },
+  {
+    "turn": 4,
+    "child": "I don't know. I'm just fine.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "low_stakes_probe"
+    ],
+    "selected_move": "low_stakes_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That's okay, sometimes \"fine\" is the best way to feel. Did you have any fun breaks at school today?"
+  },
+  {
+    "turn": 5,
+    "child": "It was okay. I just played soccer for a bit.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "low_stakes_probe"
+    ],
+    "selected_move": "low_stakes_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds like a fun way to spend a break! Did your team win the game?"
+  },
+  {
+    "turn": 6,
+    "child": "We won, I guess. But it wasn't even that big of a deal.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That\u2019s totally okay, we don't have to talk about the game at all. How has your day been going so far?"
+  },
+  {
+    "turn": 7,
+    "child": "It was just boring. Whatever.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "low_stakes_probe"
+    ],
+    "selected_move": "low_stakes_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I hear you, sometimes days just feel a bit slow. Did you have any fun classes today?"
+  },
+  {
+    "turn": 8,
+    "child": "Math was okay. I don't really care about classes though.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "respectful_withdrawal"
+    ],
+    "selected_move": "respectful_withdrawal",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That\u2019s totally fine, we don't have to talk about school stuff if you don't want to. I'm just happy to hang out with you, whether we talk or just sit here together. Is there anything else on your mind?"
+  },
+  {
+    "turn": 9,
+    "child": "No. Not really. My backpack is kind of heavy today too.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "respectful_withdrawal"
+    ],
+    "selected_move": "respectful_withdrawal",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds really tiring for your shoulders. We can just hang out quietly if you'd like, or we could talk about something totally silly instead?"
+  },
+  {
+    "turn": 10,
+    "child": "Maybe tell me a joke? Or something about dinosaurs.",
+    "emotion": "neutral",
+    "intent": "topic_change",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "gentle_bridge"
+    ],
+    "selected_move": "reflect_back",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "You want to hear a funny joke or learn something cool about dinosaurs! Should we start with a joke?"
+  },
+  {
+    "turn": 11,
+    "child": "Yeah, a joke. A really funny one.",
+    "emotion": "happy",
+    "intent": "asking",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "Okay, here goes: Why did the dinosaur cross the road? I'll tell you the answer in a second! How is your tummy feeling right now?"
+  },
+  {
+    "turn": 12,
+    "child": "Fine. My tummy is okay. Just tell the joke already!",
+    "emotion": "neutral",
+    "intent": "venting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_explore",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "Haha, okay! He walked across the road to get to the \"other side\"! I'm glad your tummy is feeling better."
+  },
+  {
+    "turn": 13,
+    "child": "That joke was bad. It wasn't even funny.",
+    "emotion": "angry",
+    "intent": "venting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "socratic_generate",
+      "gentle_bridge"
+    ],
+    "selected_move": "socratic_generate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": true,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "Haha, you caught me! My jokes can be pretty silly sometimes. Do you think a different kind of joke might make you feel better?"
+  }
+]

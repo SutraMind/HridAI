@@ -1,0 +1,24 @@
+{
+  "child_id": "sim_anxious_presentation",
+  "name": "Maya",
+  "age": 11,
+  "previous_topics_discussed": [],
+  "recurring_emotions": [
+    "withdrawn",
+    "anxious",
+    "angry",
+    "sad",
+    "neutral",
+    "happy"
+  ],
+  "known_sensitivities": [
+    "losing games"
+  ],
+  "session_history": [
+    "The session focused on feelings of fatigue and anxiety regarding an upcoming space presentation. The child expressed significant worry about social judgment and potential mistakes, alongside moments of deep sadness and withdrawal. While the conversation ended more positively by discussing a pet, the underlying distress regarding school performance remains an unresolved thread.",
+    "The session focused on the child's experiences during the school day and physical sensations in their stomach. The child appeared withdrawn and sad initially, later expressing feelings of anxiety described as \"butterflies.\" We ended by exploring ways to help manage these uncomfortable feelings when they arise.",
+    "The session focused on feelings of tiredness and physical sensations related to an upcoming school presentation. The child appeared anxious and withdrawn, describing a \"fluttery\" feeling in their stomach. We ended by exploring how elements from Minecraft might help manage these uncomfortable feelings.",
+    "The session focused on discussing physical sensations of tiredness and heaviness felt during schoolwork. The child appeared withdrawn and sad when describing these feelings. We ended by exploring ways to help those heavy feelings go away, which remains an open topic for next time.",
+    "The conversation began with casual talk about playing Roblox with a friend before shifting to feelings of discomfort. The child expressed feeling \"bad\" and described an anxious, knot-like sensation in their stomach that occurs when performing in front of others. The session ended with the introduction of deep breathing as a way to manage the urge to hide during stressful moments."
+  ]
+}

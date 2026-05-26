@@ -1,0 +1,181 @@
+[
+  {
+    "turn": 1,
+    "child": "It's fine. Whatever.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "GREETING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That\u2019s totally okay, we don't have to talk about anything at all if you don't want to. I'm just happy to sit here with you."
+  },
+  {
+    "turn": 2,
+    "child": "Okay. I'm gonna play with this eraser for a bit.",
+    "emotion": "neutral",
+    "intent": "topic_change",
+    "risk": "none",
+    "fsm_phase": "RAPPORT_BUILDING",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "validate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds like a nice way to relax. Is it a cool looking eraser?"
+  },
+  {
+    "turn": 3,
+    "child": "It's just a normal one. It's shaped like a dinosaur.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "reflect_back",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "A dinosaur eraser sounds so cool! What kind of dinosaur is it?"
+  },
+  {
+    "turn": 4,
+    "child": "It's a T-Rex. He has tiny arms.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe"
+    ],
+    "selected_move": "socratic_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "Haha, those tiny arms are so silly! I love T-Rexes. How does it feel to hold him in your hand?"
+  },
+  {
+    "turn": 5,
+    "child": "It feels okay. Whatever.",
+    "emotion": "withdrawn",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That's totally okay, we don't have to talk about it if you don't want to. I'm just happy to hang out with you! How has your day been going so far?"
+  },
+  {
+    "turn": 6,
+    "child": "It was bad. Everything is just stupid today.",
+    "emotion": "angry",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "I'm so sorry today has been such a bummer. It is totally okay if you don't want to talk about it right now."
+  },
+  {
+    "turn": 7,
+    "child": "It's just stupid. Everyone is being mean.",
+    "emotion": "angry",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore"
+    ],
+    "selected_move": "socratic_explore",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That sounds really tough, and I'm so sorry people are being mean to you. It makes sense that you feel frustrated when things aren't fair. Does this happen mostly at school?"
+  },
+  {
+    "turn": 8,
+    "child": "Sometimes. But today is just the worst.",
+    "emotion": "sad",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "socratic_generate"
+    ],
+    "selected_move": "socratic_generate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": true,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I'm so sorry today feels so heavy. I'm right here with you. Do you think there is anything at all that might make things feel a little bit better?"
+  }
+]

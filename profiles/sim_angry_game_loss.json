@@ -1,0 +1,20 @@
+{
+  "child_id": "sim_angry_game_loss",
+  "name": "Alex",
+  "age": 9,
+  "previous_topics_discussed": [],
+  "recurring_emotions": [
+    "neutral",
+    "sad",
+    "withdrawn",
+    "angry",
+    "anxious"
+  ],
+  "known_sensitivities": [
+    "losing games"
+  ],
+  "session_history": [
+    "The session focused on feelings of unfairness regarding a peer and a sibling during games. The child displayed a mix of anger, anxiety, and withdrawal throughout the conversation. Unresolved tension remains regarding the social conflict and the child's preference for quiet space over discussion.",
+    "The session focused on the child's difficult day and feelings of frustration regarding others being mean. The child transitioned from being withdrawn and neutral while playing with a dinosaur eraser to expressing anger and sadness about recent events. There is an unresolved thread regarding the specific reasons why the day felt so bad and how to help them feel better."
+  ]
+}

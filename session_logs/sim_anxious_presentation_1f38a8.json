@@ -1,0 +1,226 @@
+[
+  {
+    "turn": 1,
+    "child": "It's okay, I guess. Just fine.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "GREETING",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": false,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That\u2019s totally okay, we don't have to talk about anything big right now. We can just hang out! How has your morning been so far?"
+  },
+  {
+    "turn": 2,
+    "child": "It was alright. I just played some games on my tablet during break.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "RAPPORT_BUILDING",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "validate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds like a nice way to relax for a bit. What kind of games were you playing?"
+  },
+  {
+    "turn": 3,
+    "child": "Just some Roblox ones. My friend Lily was on too.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back"
+    ],
+    "selected_move": "reflect_back",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "It sounds like you and Lily had a fun time playing Roblox together! Did you win any of the games you played?"
+  },
+  {
+    "turn": 4,
+    "child": "Yeah, we won a few. But it doesn't really matter.",
+    "emotion": "neutral",
+    "intent": "deflecting",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That\u2019s totally okay, we don't have to talk about that at all. How has your day been going so far?"
+  },
+  {
+    "turn": 5,
+    "child": "It was okay. I guess.",
+    "emotion": "neutral",
+    "intent": "sharing",
+    "risk": "none",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "normalize_and_hold_space"
+    ],
+    "selected_move": "normalize_and_hold_space",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "That\u2019s totally fine, sometimes days just feel a bit 'meh.' No pressure to talk about anything at all. How are you feeling in general today?"
+  },
+  {
+    "turn": 6,
+    "child": "I don't know. Just kind of bad.",
+    "emotion": "sad",
+    "intent": "distress_signal",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe"
+    ],
+    "selected_move": "socratic_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": false,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I'm so sorry you're feeling that way, Maya. I'm right here with you. Does that bad feeling live in a certain part of your body?"
+  },
+  {
+    "turn": 7,
+    "child": "It's just in my tummy. It feels all twisty and weird.",
+    "emotion": "anxious",
+    "intent": "sharing",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe"
+    ],
+    "selected_move": "socratic_probe",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": false,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "CONTENT_VIOLATION",
+    "robot": "Oh, that sounds really uncomfortable, Maya. I wish I could give you a big hug to make it better. Does that twisty feeling stay in one spot?"
+  },
+  {
+    "turn": 8,
+    "child": "It's just everywhere. Like a big knot.",
+    "emotion": "anxious",
+    "intent": "sharing",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore"
+    ],
+    "selected_move": "socratic_explore",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That sounds so tough to carry around everywhere. Does that big knot ever show up when you are doing schoolwork?"
+  },
+  {
+    "turn": 9,
+    "child": "Maybe. I don't know. It's just mostly when I have to do stuff in front of people.",
+    "emotion": "anxious",
+    "intent": "sharing",
+    "risk": "low",
+    "fsm_phase": "TOPIC_EXPLORATION",
+    "eligible": [
+      "validate",
+      "reflect_back",
+      "socratic_probe",
+      "socratic_explore",
+      "socratic_generate"
+    ],
+    "selected_move": "socratic_generate",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": false,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "That makes sense, because being in front of everyone can feel really scary. Do you think there is anything that might make those moments feel a little easier?"
+  },
+  {
+    "turn": 10,
+    "child": "I don't know. I just want to hide under my desk forever.",
+    "emotion": "anxious",
+    "intent": "venting",
+    "risk": "low",
+    "fsm_phase": "SKILL_TEACHING",
+    "eligible": [
+      "teach_skill",
+      "validate"
+    ],
+    "selected_move": "teach_skill",
+    "goals": {
+      "acknowledge_child_feeling": true,
+      "understand_context": true,
+      "explore_pattern": true,
+      "elicit_child_solution": true,
+      "close_warmly": false
+    },
+    "safety_flag": "NONE",
+    "robot": "I totally get that, sometimes a little hideout sounds like the best place ever. Some kids find that taking slow, deep breaths helps them feel a bit safer when they want to hide. Would you want to try doing that with me right now?"
+  }
+]

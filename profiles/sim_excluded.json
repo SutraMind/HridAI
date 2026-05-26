@@ -1,0 +1,20 @@
+{
+  "child_id": "sim_excluded",
+  "name": "Sam",
+  "age": 10,
+  "previous_topics_discussed": [],
+  "recurring_emotions": [
+    "neutral",
+    "angry",
+    "withdrawn",
+    "sad",
+    "happy"
+  ],
+  "known_sensitivities": [
+    "losing games"
+  ],
+  "session_history": [
+    "The session focused on feelings of boredom and frustration regarding schoolwork, specifically long division. The child expressed feelings of being tired, annoyed, and mentally heavy, eventually becoming withdrawn. There is an unresolved thread regarding how to help the child feel \"lighter\" during quiet or difficult moments.",
+    "The conversation covered casual topics including Minecraft, soccer, and schoolwork. The child appeared mostly withdrawn or neutral, though they showed brief moments of happiness before expressing frustration with a joke. There was no deep discussion of personal feelings, leaving the connection at a light, playful level."
+  ]
+}
